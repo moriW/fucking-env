@@ -1,6 +1,13 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        -- pyright will be automatically installed with mason and loaded with lspconfig
+        pyright = {},
+        tsserver = {},
+      },
+    },
     init = function()
       local keys = require("lazyvim.plugins.lsp.keymaps").get()
 
