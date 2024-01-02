@@ -12,6 +12,6 @@ rm ~/.tmux.conf
 rm ~/.tmux.conf.local
 
 ln -s $(PWD)/nvim ~/.config/nvim
-ln -s $(PWD)/alacritty.yml ~/.alacritty.yml
+ln -s $(PWD)/alacritty.toml ~/.alacritty.toml
 ln -s $(PWD)/tmux/.tmux.conf ~/.tmux.conf
 ln -s $(PWD)/tmux.conf.local ~/.tmux.conf.local
