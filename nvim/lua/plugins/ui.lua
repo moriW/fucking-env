@@ -2,9 +2,15 @@ return {
   {
     "nordtheme/vim",
     lazy = false,
-    config = function()
-      vim.cmd([[colorscheme nord]])
-    end,
+    -- config = function()
+    --   vim.cmd([[colorscheme nord]])
+    -- end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "nord",
+    },
   },
   {
     "norcalli/nvim-colorizer.lua",
@@ -50,6 +56,12 @@ return {
     "nvimdev/dashboard-nvim",
     opts = function(_, opts)
       local logo = {
+        [[ ]],
+        [[ ]],
+        [[ ]],
+        [[ ]],
+        [[ ]],
+        [[ ]],
         [[ ]],
         [[ ]],
         [[ ]],
