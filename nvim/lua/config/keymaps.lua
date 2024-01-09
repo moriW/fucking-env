@@ -11,7 +11,7 @@ map("n", "<leader>bC", "<cmd>bufdo bd<cr>", { desc = "Close Other buffer" })
 map("n", "q", "<cmd>q<cr>", { desc = "Quit Buffer/Window" })
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "LiveGrep" })
 map("n", "<leader>M", "<cmd>MinimapToggle<cr>", { desc = "MinimapToggle" })
-
+map("i", "jk", "<Esc>")
 map("v", "p", '"_dP')
 
 local lazyterm = function()
@@ -19,5 +19,4 @@ local lazyterm = function()
 end
 map("n", "<C-t>", lazyterm, { desc = "ToggleTerm" })
 map("t", "<C-t>", lazyterm, { desc = "ToggleTerm" })
-
 map("n", "<leader>gb", "<cmd>GitBlameToggle<cr>", { desc = "ToggleBlame" })
