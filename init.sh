@@ -15,7 +15,6 @@ brew install font-fira-code-nerd-font
 # oh-my-zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-
 rm -rf ~/.config/nvim
 rm ~/.alacritty.toml
 rm ~/.zshrc

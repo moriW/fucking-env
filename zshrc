@@ -77,7 +77,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump thefuck)
+plugins=(git autojump thefuck python golang node macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,11 +111,6 @@ export EDITOR="nvim"
 
 alias  vim="nvim"
 alias  venv="source venv/bin/activate"
-alias  env6="python3.6 -m venv venv"
-alias  env7="python3.7 -m venv venv"
-alias env10="python3.10 -m venv venv"
-alias env11="python3.11 -m venv venv"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
@@ -126,3 +121,11 @@ export NVM_DIR="$HOME/.nvm"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+export KUBECONFIG="$HOME/.kube/config"
+
+# source $(k9s completion zsh)
