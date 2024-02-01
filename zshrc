@@ -125,7 +125,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-
 export KUBECONFIG="$HOME/.kube/config"
 
 # source $(k9s completion zsh)
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
