@@ -129,3 +129,11 @@ export KUBECONFIG="$HOME/.kube/config"
 
 # source $(k9s completion zsh)
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="$PATH:/Users/happyelements/.dotnet/tools"
+
+export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
+
+
+# ffmpeg合并视频的
+# ffmpeg -i 1316751171-1-30112.mp4 -i 1316751171-1-30280.mp4  -c:v copy -c:a aac -strict experimental 飘.mp4
+
